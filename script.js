@@ -7,3 +7,12 @@
 // * Pensate prima in italiano.
 // * Dividete in piccoli problemi la consegna.
 // * Individuate gli elementi di cui avete bisogno per realizzare il programma.
+
+
+// genero 5 numeri casuali
+let randomNumbers = [];
+
+for (let i = 0; i < 5; i++) {
+   let random = Math.floor(Math.random() * 100) + 1;
+   console.log(random);
+}
