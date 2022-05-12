@@ -8,9 +8,17 @@
 // * Dividete in piccoli problemi la consegna.
 // * Individuate gli elementi di cui avete bisogno per realizzare il programma.
 
+// FUNZIONE
+
+function timer() {
+    numeroUtente = Number(prompt("Inserisci un numero della lista"));
+}
+
+
+let randomNumbers = [];
+let numeroUtente;
 
 // genero 5 numeri casuali
-let randomNumbers = [];
 
 for (let i = 0; i < 5; i++) {
    let random = Math.floor(Math.random() * 100) + 1;
@@ -20,3 +28,7 @@ for (let i = 0; i < 5; i++) {
 console.log(randomNumbers);
 
 alert(randomNumbers);
+
+setTimeout(timer, 2000);
+
+
