@@ -14,9 +14,9 @@ let randomNumbers = [];
 
 for (let i = 0; i < 5; i++) {
    let random = Math.floor(Math.random() * 100) + 1;
-   console.log(random);
-
    randomNumbers.push(random);
 }
 
 console.log(randomNumbers);
+
+alert(randomNumbers);
