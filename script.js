@@ -11,24 +11,31 @@
 // FUNZIONE
 
 function timer() {
-    numeroUtente = Number(prompt("Inserisci un numero della lista"));
-}
 
+    for (var i = 0; i < 5; i++) {
+        let numeroUtente = Number(prompt("Inserisci un numero della lista"));
+        listaNumeriUtente.push(numeroUtente);
+    }
+    
+}
 
 let randomNumbers = [];
+let listaNumeriUtente = [];
 let numeroUtente;
 
-// genero 5 numeri casuali
 
+
+
+// genero 5 numeri casuali
 for (let i = 0; i < 5; i++) {
-   let random = Math.floor(Math.random() * 100) + 1;
+   let random = Number(Math.floor(Math.random() * 100) + 1);
    randomNumbers.push(random);
 }
-
 console.log(randomNumbers);
 
 alert(randomNumbers);
 
 setTimeout(timer, 2000);
 
+console.log(listaNumeriUtente);
 
